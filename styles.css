@@ -117,7 +117,7 @@ body{
 
 .navigation-bar{
     grid-row: 1/2;
-    padding: 1px;
+    padding: 5px;
     display: grid;
 }
 
@@ -132,7 +132,7 @@ body{
     height: 34px;
     width: 34px;
     padding-right: 10px;
-    padding-left: 10px;
+    padding-left: 45px;
 }
 
 .search-icon svg{
@@ -151,9 +151,11 @@ body{
 .profile{
     grid-column: 8/10;
     display: flex;
-    padding: 1px;
+    padding: 5px;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: right;
+    padding-right: 70px;
+    gap: 20px;
 }
 
 .dp{
@@ -183,9 +185,64 @@ body{
 
 .banner{
     grid-row: 3/10;
+    display: grid;
+}
+
+.banner-profile{
+    grid-column: 1/6;
+    display: flex;
+    padding-left: 40px;
+    justify-content: left;
+    align-items: center;
+}
+
+.banner-dp{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text{
+    padding-left:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.banner-profile-name{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.banner-posts{
+    grid-column: 6/10;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    padding-right: 50px;
+}
+
+.banner-posts button{
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background-color: #1992d4;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-content{
-    background-color: chartreuse;
+    background-color: #E2E8F0;
     grid-row: 2/10;
 }

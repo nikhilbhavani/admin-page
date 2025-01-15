@@ -10,39 +10,98 @@ body{
 }
 
 .dashboard {
-    background-color: skyblue;
+    background-color: #1992d4;
     display: grid;
-    grid-template-columns: 100px 1fr; /* Sidebar (250px) and content (rest) */
+    grid-template-columns: 100px 1fr; 
     grid-template-rows: repeat(12, 65px);
-    gap: 10px; /* Space between grid items */
+    gap: 10px; 
     padding: 20px;
     align-items: center;
     max-height: 100vh;
 }
 .branding{
-    display: flex;
+    display: grid;
     grid-row: 1/2;
+}
+
+.branding a{
+    display: flex;
     align-items: center;
-    padding: 20px;
+    text-decoration: none;
 }
 
 .icon{
-    width: 50px;
+    fill: white;
+    width: 45px;
+    padding: 10px;
 }
 
-.title {
-    font-size: 1.5em;           /* Dashboard text */
-    color: #333;
+.dash {     
+    color: white;
+    font-size: 1.75em;
 }
 
 .navigation{
+    grid-row: 4/4;
+}
 
-    grid-row: 3/3;
+.navigation a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.nav-icon{
+    fill: white;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding-right: 20px;
+}
+.nav-icon svg{
+    width: 100%;
+    height: 100%;
+}
+
+.nav-text{
+    color: white;
+    font-size: 1.25em;
 }
 
 .settings{
 
-    grid-row: 5/5;
+    grid-row: 8/8;
+}
+
+.settings a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.set-icon{
+    fill: white;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding-right: 20px;
+}
+.set-icon svg{
+    width: 100%;
+    height: 100%;
+}
+
+.set-text{
+    color: white;
+    font-size: 1.25em;
 }
 
 .content{
